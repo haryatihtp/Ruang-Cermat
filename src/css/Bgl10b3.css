@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f6f9;
+    --text-color: #2c3e50;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.fungi-page {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fungi-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.section-navigator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.section-navigator button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #e0e6ed;
+    color: var(--text-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.section-navigator button.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.main-content {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px var(--card-shadow);
+}
+
+.fungi-classification {
+    text-align: center;
+    text-decoration: none;
+}
+
+.fungi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.fungi-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 10px 25px var(--card-shadow);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+.fungi-card,
+.fungi-card a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.fungi-card .card-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    text-decoration: none;
+}
+
+.fungi-card .card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.fungi-highlights {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.highlight-item {
+    text-align: center;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 10px;
+}
+
+.highlight-item .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .fungi-highlights {
+        flex-direction: column;
+    }
+}

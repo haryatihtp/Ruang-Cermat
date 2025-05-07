@@ -1,0 +1,98 @@
+/* General styling for the container */
+.usaha-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .usaha-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d6a4f; /* Hijau gelap */
+  }
+  
+  .usaha-container section {
+    margin-bottom: 30px;
+  }
+  
+  .usaha-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1b5e20; /* Hijau lebih gelap */
+  }
+  
+  .usaha-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .usaha-container ul {
+    padding-left: 20px;
+    font-size: 1.2rem;
+    list-style: disc;
+  }
+  
+  .usaha-container ul li {
+    margin-bottom: 10px;
+  }
+  
+  .usaha-container .highlight {
+    background-color: #d3f9d8; /* Hijau muda */
+    padding: 10px;
+    border-left: 4px solid #2d6a4f; /* Hijau gelap */
+    font-style: italic;
+    margin: 20px 0;
+  }
+  
+  /* Styling for the bottom section */
+  .bottom-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .bottom-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2d6a4f; /* Hijau gelap */
+  }
+  
+  .bottom-container .btn-latihan {
+    background-color: #2d6a4f; /* Hijau gelap */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bottom-container .btn-latihan:hover {
+    background-color: #1b5e20; /* Hijau lebih gelap */
+  }
+  
+  /* Navigation buttons */
+  .navigation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-container .btn-navigate {
+    background-color: #1b5e20; /* Hijau gelap */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-container .btn-navigate:hover {
+    background-color: #2d6a4f; /* Hijau gelap */
+  }
+  

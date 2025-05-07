@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .app {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  /* Timer Styling */
+  .timer {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+  }
+  
+  .result {
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  
+  .result h2 {
+    color: #27ae60;
+  }
+  
+  .result p {
+    color: #7f8c8d;
+  }
+  
+  .question-section {
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .option-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .result-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+  }
+  
+  .result-btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+  }
+  
+  .logout-button {
+    background-color: #f1f0f0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(215, 208, 208, 0.1);
+    margin-top: 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logout-button:active {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logout-button:focus {
+    outline: none;
+    border: 2px solid #eae5e5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .timer {
+      font-size: 1.2rem;
+    }
+  
+    .question {
+      font-size: 1rem;
+    }
+  
+    .option-btn {
+      font-size: 0.9rem;
+    }
+  
+    .result-btn {
+      font-size: 0.9rem;
+    }
+  
+    .logout-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

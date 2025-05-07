@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .container {
+    padding: 30px;
+  }
+  
+
+  h1 {
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+   .paragraf{
+    color: black;
+   }
+
+  .card {
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-body {
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 12px;
+  }
+  
+
+  .card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 15px;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+
+  .list-group-item {
+    font-size: 1.1rem;
+    padding: 12px;
+    color: #555;
+    border: none;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-group-item:hover {
+    background-color: #00796b;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+
+  .card-img-top {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .row {
+    margin-bottom: 30px;
+  }
+  
+
+  button {
+    background-color: #00796b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+    cursor: pointer;
+  }
+  
+  /* Interactive Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card, .row {
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .card {
+      margin-bottom: 15px;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .list-group-item {
+      font-size: 1rem;
+      padding: 10px;
+    }
+    
+    button {
+      font-size: 1rem;
+}
+}

@@ -1,0 +1,120 @@
+/* ================================ Bab1-5 ====================================== */
+
+.app__header {
+    color: #2d2d2d;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid #ff6f00;
+    margin-bottom: 40px;
+  }
+  
+  .app__header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .app__header__description {
+    font-size: 1.25rem;
+    color: #555;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+  .app__section {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app__section__title {
+    font-size: 2rem;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .app__section__title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #ff6f00;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .app__section__content {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+  }
+
+  /* ========================= Quiz Card ========================= */
+.app__card {
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    border-radius: 15px;
+    padding: 40px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .app__card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .app__form-label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2d2d2d;
+  }
+  
+  .app__form-check input[type="radio"] + label {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .app__form-check input[type="radio"]:checked + label {
+    color: #ff6f00;
+    font-weight: bold;
+  }
+  
+  .app__form-feedback {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .app__form-feedback.text-success {
+    color: #28a745;
+  }
+  
+  .app__form-feedback.text-danger {
+    color: #dc3545;
+  }
+  .app__section img {
+    display: block;
+    margin: 20px auto; 
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ========================= Buttons ========================= */
+  .app__button {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .app__button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+  }

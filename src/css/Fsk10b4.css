@@ -1,0 +1,165 @@
+.bab4-container {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 20px;
+    background: #f4f7fc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .bab4-container h1, .bab4-container h2, .bab4-container h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .bab4-container h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    border-bottom: 2px solid #16a085;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .bab4-container h3 {
+    font-size: 1.4rem;
+    color: #16a085;
+    margin-top: 15px;
+  }
+  
+  .bab4-container p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #555;
+  }
+  
+  .bab4-container ul {
+    padding-left: 20px;
+    list-style-type: circle;
+    margin-bottom: 20px;
+  }
+  
+  .bab4-container li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .bab4-container strong {
+    color: #16a085;
+  }
+  
+  .bab4-container code {
+    font-family: 'Courier New', Courier, monospace;
+    background: #eef2f3;
+    color: #d35400;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  .bab4-container section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-left: 4px solid #16a085;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .bab4-container section:hover {
+    background: #ecf9f4;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bab4-container .content-item {
+    margin-bottom: 20px;
+  }
+  
+  .bab4-container .card {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bab4-container .card-header {
+    background-color: #16a085;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .bab4-container .card-body {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .bab4-container .navigation-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .bab4-container .btn-navigate {
+    background-color: #16a085;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+  }
+  
+  .bab4-container .btn-navigate:hover {
+    background-color: #138f76;
+    transform: scale(1.05);
+  }
+  
+  .bab4-container .btn-navigate:active {
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .bab4-container {
+      padding: 15px;
+    }
+  
+    .bab4-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .bab4-container h3 {
+      font-size: 1.2rem;
+    }
+  
+    .bab4-container p,
+    .bab4-container li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animasi untuk elemen yang tampil */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .bab4-container .fade-in {
+    animation: fadeIn 0.8s ease-in-out both;
+  }

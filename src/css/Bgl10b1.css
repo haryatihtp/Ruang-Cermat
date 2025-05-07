@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-light: #ecf0f1;
+    --text-color: #333;
+  }
+  
+  .biodiversity-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  
+  .tech-conservation {
+    background-color: var(--background-light);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .tech-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tech-tabs button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-tabs button.active {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  
+  .scientific-research {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .research-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .research-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .global-impact {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .impact-indicators {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .impact-card {
+    text-align: center;
+    flex: 1;
+    margin: 0 15px;
+    background-color: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
+  .interactive-education {
+    background-color: var(--background-light);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .education-resources {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resource-card {
+    flex: 1;
+    margin: 0 15px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .resource-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .research-grid,
+    .impact-indicators,
+    .education-resources {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
+  
+    .research-card,
+    .impact-card,
+    .resource-card {
+      margin: 10px 0;
+    }
+  }
+  
+  .detailed-material {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .material-section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .material-section h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .material-section ul, 
+  .material-section ol {
+    padding-left: 30px;
+  }
+  
+  .material-section ul li, 
+  .material-section ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .material-section strong {
+    color: var(--secondary-color);
+  }
+  
+  .hero-section {
+    
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1s ease-in;
+  }
+  ;
+  
+  .download-materials {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .download-materials .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .download-materials .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .download-materials .card-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .download-materials .download-stats {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }

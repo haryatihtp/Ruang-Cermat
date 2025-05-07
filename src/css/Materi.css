@@ -1,0 +1,219 @@
+/* Header Section */
+.section-header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .section-header h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: zoomInOut 2.5s infinite ease-in-out;
+  }
+  .section-header h2::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #72dfac, #2f981c);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    border-radius: 2px;
+  }
+  
+  /* Animasi */
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  
+  .biologi-biology-section {
+    padding: 3rem 0;
+    background: #f9f9f9;
+  }
+  .biology-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsif */
+    justify-items: center; /* Kartu di tengah */
+  }
+  
+  
+  .biologi-biology-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* Membatasi ukuran maksimal */
+  }
+  .biologi-biology-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Gambar */
+  .card-image {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .card-image:hover img {
+    transform: scale(1.1);
+  }
+  .card-category {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #34495e;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 15px;
+  }
+  
+  /* Konten */
+  .card-content {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    height: 100%; 
+  }
+  
+  .card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+    flex-grow: 1;
+  }
+  
+  /* Tombol */
+  .detail-btn {
+    display: inline-block;
+    width: auto;
+    background: linear-gradient(45deg, #103027b0, #66cb9f);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: none;
+    text-align: center;
+    margin-top: auto; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .detail-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(38, 117, 252, 0.4);
+  }
+  
+  
+  .biologi-biology-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
+    max-height: 400px; 
+    max-width: 300px; 
+  }
+  
+  .biologi-biology-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (max-width: 768px) {
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .biology-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kurangi ukuran kartu */
+    }
+  
+    .biologi-biology-card {
+      max-width: 250px;
+    }
+  
+    .card-image {
+      height: 200px; 
+    }
+  
+    .card-content h3 {
+      font-size: 1rem;
+    }
+  
+    .card-content p {
+      font-size: 0.85rem;
+    }
+  
+    .detail-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Responsif untuk perangkat kecil  */
+  @media (max-width: 480px) {
+    .section-header h2 {
+      font-size: 1.6rem;
+    }
+  
+    .biology-grid {
+      gap: 1rem;
+    }
+  
+    .biologi-biology-card {
+      max-width: 200px;
+    }
+  
+    .card-image {
+      height: 180px;
+    }
+  
+    .card-content h3 {
+      font-size: 0.9rem;
+    }
+  
+    .card-content p {
+      font-size: 0.8rem;
+    }
+  
+    .detail-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }

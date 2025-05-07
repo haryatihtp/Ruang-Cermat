@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .header h2 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .section {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 3em;
+    margin-right: 20px;
+  }
+  
+  .content {
+    max-width: 900px;
+    text-align: justify;
+  }
+  
+  h3 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  p, blockquote {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  blockquote {
+    font-style: italic;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-left: 5px solid #3498db;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .activity-container {
+    background-color: #e2f3e2;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .activity-container h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .situations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .situation-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .situation-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .situation-card h3 {
+    font-size: 1.5em;
+    color: #34495e;
+  }
+  
+  .situation-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  @media (max-width: 768px) {
+    .situations {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .activity-section {
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .word-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .word-card {
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #fffbea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .word-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .word-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a5a5a;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  
+  .word-title.nailed {
+    background-color: #df9f5f;
+    color: white;
+  }
+  
+  .word-title.beauty-pageant {
+    background-color: #879fc3;
+    color: white;
+  }
+  
+  .word-title.mind-blowing {
+    background-color: #819f92;
+    color: white;
+  }
+  
+  .word-title.alarmed {
+    background-color: #d6a76c;
+    color: white;
+  }
+  
+  .word-title.recruitment {
+  background-color: #F0C1E1;
+  color:white; 
+  }
+  
+  .word-title.upset {
+  background-color: #D76C82;
+  color: white;
+  }
+  
+  .word-title.mean {
+  background-color: #4B4376;
+  color: white;
+  }
+  
+  .word-title.not-visible {
+  background-color: #62825D;
+  color: white;
+  }
+  
+  .word-meaning {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .word-example {
+    font-style: italic;
+    color: #666;
+    font-size: 15px;
+  }
+  
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  table:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  thead tr {
+  background-color: #FFD700;
+  color: #000;
+  }
+  
+  th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
+  }
+  
+  td {
+  font-size: 16px;
+  }
+  
+  th {
+  font-size: 18px;
+  }
+  
+  @media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  }
+  
+  .adverb-section {
+    margin: 30px 0;
+  }
+  
+  .adverb-section h2 {
+    color: #121211;
+  }
+  
+  .adverb-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+  }
+  
+  .adverb-table th,
+  .adverb-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .adverb-table th {
+    background-color: #ffd700;
+    color: #100e0e;
+    font-weight: bold;
+  }
+  
+  .adverb-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .adverb-table tr:hover {
+    background-color: #f7f5ee;
+  }
+  
+  /* Kartu Soal */
+  .word-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .word-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .word-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .word-meaning {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Feedback */
+  .feedback {
+    margin-top: 30px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .feedback ul {
+    list-style-type: none;
+  }
+  
+  .feedback li {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .feedback li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Feedback untuk jawaban benar atau salah */
+  .feedback li.correct {
+    color: #28a745; /* Hijau untuk jawaban benar */
+  }
+  
+  .feedback li.incorrect {
+    color: #dc3545; /* Merah untuk jawaban salah */
+    font-weight: bold;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .word-list {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  button-container {
+    display: flex;
+    gap: 20px; /* Jarak antar tombol */
+    width: 100%;
+  }
+  
+  .styled-button {
+    background-color: #0099ff; /* Warna biru yang sama */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2); /* Tambahan bayangan */
+  }
+  
+  .styled-button:hover {
+    background-color: #0066cc; /* Warna biru lebih gelap saat hover */
+  }

@@ -1,0 +1,106 @@
+/* Container Styling */
+.referensi-container {
+    font-family: "Arial", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f3f4f7, #e6e8ec);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .referensi-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4a4e69;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  /* Description Styling */
+  .referensi-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* List Container Styling */
+  .referensi-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  /* List Item Styling */
+  .referensi-item {
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .referensi-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Link Styling */
+  .referensi-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #3b82f6;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .referensi-link:hover {
+    color: #2563eb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .referensi-title {
+      font-size: 2rem;
+    }
+  
+    .referensi-description {
+      font-size: 1rem;
+    }
+  
+    .referensi-item {
+      padding: 10px 15px;
+    }
+  
+    .referensi-link {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

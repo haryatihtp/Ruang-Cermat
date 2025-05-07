@@ -1,0 +1,106 @@
+.zygomycota-materi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .zygomycota-materi h1 {
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  .zygomycota-materi h2 {
+    color: #000000;
+    margin-top: 20px;
+  }
+  
+  .zygomycota-materi p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .zygomycota-materi ul {
+    margin-left: 20px;
+  }
+
+/*ini buat page ascomycota*/
+.ascomycota-materi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .ascomycota-materi h1 {
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  .ascomycota-materi h2 {
+    color: #000000;
+    margin-top: 20px;
+  }
+  
+  .ascomycota-materi p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .ascomycota-materi ul {
+    margin-left: 20px;
+  }
+
+/*ini buat page basidiomycota*/
+.basidiomycota-materi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .basidiomycota-materi h1 {
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  .basidiomycota-materi h2 {
+    color: #000000;
+    margin-top: 20px;
+  }
+  
+  .basidiomycota-materi p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .basidiomycota-materi ul {
+    margin-left: 20px;
+  }
+
+/*ini buat page deuteromycota*/
+.deuteromycota-materi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .deuteromycota-materi h1 {
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  .deuteromycota-materi h2 {
+    color: #000000;
+    margin-top: 20px;
+  }
+  
+  .deuteromycota-materi p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .deuteromycota-materi ul {
+    margin-left: 20px;
+  }
